@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vampire kiss</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./slick.css" >
+</head>
+
+<body>
+    <div class="bg">
+        <div class="hlavicka">
+            <h1>Vampire kiss</h1>
+            <a href="#">E-shop</a>
+        </div>
+        <hr class="jedna">
+
+
+        <div class="carousel">
+
+            <div class="slide-content">
+                <div class="carousel-caption">
+                    <h2>Žijte spolu šťastně až na věky</h2>
+                    <hr class="dva">
+                    <hr class="tri">
+                </div>
+                <img src="./foto/DSC_6862.jpg" alt="rtěnka">
+            </div>
+
+            <div class="slide-content">
+                <div class="carousel-caption">
+                    <h2>Sladká chuť a vůně rtěnky</h2>
+                    <hr class="dva">
+                    <hr class="tri">
+                </div>
+                <img src="./foto/DSC_6721.jpg" alt="vůně a chuť rtěnky">
+            </div>
+
+            <div class="slide-content">
+                <div class="carousel-caption">
+                    <h2>Dokonale Vaše rty hydratuje</h2>
+                    <hr class="dva">
+                    <hr class="tri">
+                </div>
+                <img src="./foto/DSC_6738.jpg" alt="hydratace rtěnky">
+            </div>
+
+            <div class="slide-content">
+                <div class="carousel-caption">
+                    <h2>Nechte se zhýčkat a kupte si už dnes dlouhotrvající rtěnkou</h2>
+                    <hr class="dva">
+                    <hr class="tri">
+                    <a>E-shop</a>
+                </div>
+                <img src="./foto/Export/Export/DSC_6896-Edit.jpg" alt="portrét">
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./slick.min.js"></script>
+        <script>
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 1000,
+                autoplaySpeed: 4000,
+                autoplay: true,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                arrows: false,
+            });
+        </script>
+</body>
+
+</html>
