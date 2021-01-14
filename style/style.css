@@ -1,0 +1,175 @@
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: "Lucida";
+    color: rgb(214, 214, 214);
+}
+
+.bg{
+    background-image: url("./foto/Export/DSC_6842.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    height: 400px;
+    width: auto;
+}
+
+.hlavicka{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.hlavicka a {
+    font-size: 2em;
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.carousel .slick-dots {
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 120px;
+}
+
+.carousel .slick-dots li {
+    list-style: none;
+}
+
+.carousel .slick-dots li button {
+    position: relative;
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+}
+
+.carousel .slick-dots li button::before {
+    position: absolute;
+    visibility: visible;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff9f;
+    content: "";
+}
+
+.carousel .slick-dots .slick-active button::before {
+    position: absolute;
+    visibility: visible;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    content: "";
+}
+
+.slide-content {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.carousel-caption{
+    padding-top: 120px;
+}
+
+.jedna{
+    max-width: 1200px;
+    width: 95%;
+}
+
+.dva{
+    width:500px;
+    margin-left: 0px;
+}
+
+.tri{
+    width:100px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .hlavicka {
+        padding-top: 10px;
+    }
+
+    .carousel {
+        margin-top: 50px;
+    }
+
+    .carousel .slick-dots {
+        position: absolute;
+        bottom: -10%;
+        left: 10%;
+    }
+    
+    .slide-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }    
+
+    img {
+        height: 500px;
+        width: auto;
+    }
+   
+
+    .carousel-caption {
+        padding-top: 20px;
+    }
+
+    .dva {
+        width: 100%;
+    }
+
+    .tri {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .hlavicka {
+        width: 80%;
+    }
+
+    h1, .hlavicka a {
+        font-size: 1.5em;
+    }
+
+    img {
+        height: 400px;
+        width: auto;
+    }
+  
+
+}
